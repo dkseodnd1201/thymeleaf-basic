@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>text vs utext</h1>
+<ul>
+    <li>th:text = <span th:text="${data}"></span></li>
+    <!-- '<'태그가 lt;으로 바뀐이유는, HTML에서 특수문자를 HTML Entity로 변경
+        utext에서 u가 unescaped를 의미한다.-->
+    <li>th:utext = <span th:utext="${data}"></span></li>
+</ul>
+
+<h1><span th:inline="none">[[...]] vs [(...)]</span></h1>
+<ul>
+    <li><span th:inline="none">[[...]] = </span>[[${data}]]</li>
+    <li><span th:inline="none">[(...)] = </span>[(${data})]</li>
+</ul>
+
+</body>
+</html>
