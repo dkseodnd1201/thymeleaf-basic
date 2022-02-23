@@ -31,7 +31,7 @@ public class BasicController {
         return "basic/text-unescaped";
     }
 
-    @GetMapping("/variable")
+    @GetMapping("/variable") //
     public String variable(Model model) {
         User userA = new User("userA", 10);
         User userB = new User("userB", 20);
