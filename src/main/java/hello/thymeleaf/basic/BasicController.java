@@ -12,10 +12,10 @@ public class BasicController {
     @GetMapping("/text-basic")
     public String textBasic(Model model){
         model.addAttribute("data", "<b>Hello Spring!<b>");
-        return "basic/text-basic";
+        return "basic/text-basic";//
     }
 
-    @GetMapping("/text-unescaped")
+    @GetMapping( "/text-unescaped")
     public String textUnescaped(Model model){
         model.addAttribute("data", "<b>Hello Spring!<b>");
         return "basic/text-unescaped";
